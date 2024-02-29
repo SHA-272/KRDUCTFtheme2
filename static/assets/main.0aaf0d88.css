@@ -2623,7 +2623,7 @@ fieldset:disabled .btn {
 .show > .btn-primary.dropdown-toggle {
   color: var(--font-color);
   background-color: transparent;
-  border-color: var(--fore-color)e;
+  border-color: var(--fore-color) e;
 }
 .btn-check:checked + .btn-primary:focus,
 .btn-check:active + .btn-primary:focus,
@@ -2678,21 +2678,21 @@ fieldset:disabled .btn {
   border-color: #6c757d;
 }
 .btn-success {
-  color: #fff;
-  background-color: #198754;
-  border-color: #198754;
+  color: var(--fore-color-2);
+  background-color: transparent;
+  border-color: var(--fore-color-2);
 }
 .btn-success:hover {
-  color: #fff;
-  background-color: #157347;
-  border-color: #146c43;
+  color: var(--fore-color-2);
+  background-color: transparent;
+  border-color: var(--fore-color-2);
 }
 .btn-check:focus + .btn-success,
 .btn-success:focus {
-  color: #fff;
-  background-color: #157347;
-  border-color: #146c43;
-  box-shadow: 0 0 0 0.25rem #3c996e80;
+  color: var(--fore-color-2);
+  background-color: transparent;
+  border-color: var(--fore-color-2);
+  box-shadow: 0 0 0 0.25rem var(--fore-color-2);
 }
 .btn-check:checked + .btn-success,
 .btn-check:active + .btn-success,
@@ -2795,20 +2795,20 @@ fieldset:disabled .btn {
   border-color: #ffc107;
 }
 .btn-danger {
-  color: #fff;
-  background-color: #dc3545;
-  border-color: #dc3545;
+  color: var(--fore-color-4);
+  background-color: transparent;
+  border-color: var(--fore-color-4);
 }
 .btn-danger:hover {
-  color: #fff;
-  background-color: #bb2d3b;
-  border-color: #b02a37;
+  color: var(--fore-color-4);
+  background-color: transparent;
+  border-color: var(--fore-color-4);
 }
 .btn-check:focus + .btn-danger,
 .btn-danger:focus {
-  color: #fff;
-  background-color: #bb2d3b;
-  border-color: #b02a37;
+  color: var(--fore-color-4);
+  background-color: transparent;
+  border-color: var(--fore-color-4);
   box-shadow: 0 0 0 0.25rem #e1536180;
 }
 .btn-check:checked + .btn-danger,
@@ -2965,7 +2965,7 @@ fieldset:disabled .btn {
 .btn-outline-secondary.dropdown-toggle.show {
   color: var(--font-color);
   background-color: transparent;
-  border-color: var(--fore-color)e;
+  border-color: var(--fore-color) e;
 }
 .btn-check:checked + .btn-outline-secondary:focus,
 .btn-check:active + .btn-outline-secondary:focus,
@@ -4142,7 +4142,12 @@ fieldset:disabled .btn {
   color: #000000e6;
 }
 .navbar-dark .navbar-brand {
-  background-image: linear-gradient(90deg, var(--fore-color-1), var(--fore-color-3), var(--fore-color-4));
+  background-image: linear-gradient(
+    90deg,
+    var(--fore-color-1),
+    var(--fore-color-3),
+    var(--fore-color-4)
+  );
   background-size: 400% 2%;
   color: transparent;
   -webkit-background-clip: text;
@@ -4151,7 +4156,12 @@ fieldset:disabled .btn {
 }
 .navbar-dark .navbar-brand:hover,
 .navbar-dark .navbar-brand:focus {
-  background-image: linear-gradient(90deg, var(--fore-color-1), var(--fore-color-3), var(--fore-color-4));
+  background-image: linear-gradient(
+    90deg,
+    var(--fore-color-1),
+    var(--fore-color-3),
+    var(--fore-color-4)
+  );
   background-size: 400% 2%;
   color: transparent;
   -webkit-background-clip: text;
@@ -5173,7 +5183,7 @@ fieldset:disabled .btn {
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid var(--fore-color-2);
   border-top-left-radius: calc(0.3rem - 1px);
   border-top-right-radius: calc(0.3rem - 1px);
 }
@@ -5197,7 +5207,7 @@ fieldset:disabled .btn {
   align-items: center;
   justify-content: flex-end;
   padding: 0.75rem;
-  border-top: 1px solid #dee2e6;
+  border-top: 1px solid var(--fore-color-2);
   border-bottom-right-radius: calc(0.3rem - 1px);
   border-bottom-left-radius: calc(0.3rem - 1px);
 }
@@ -7026,10 +7036,7 @@ fieldset:disabled .btn {
 }
 .bg-secondary {
   --bs-bg-opacity: 1;
-  background-color: rgba(
-    var(--bs-secondary-rgb),
-    var(--bs-bg-opacity)
-  ) !important;
+  background-color: var(--fore-color-3) !important;
 }
 .bg-success {
   --bs-bg-opacity: 1;
@@ -17608,8 +17615,6 @@ select.form-control {
   transition: background-color 0.3s, border-color 0.3s;
 }
 
-
-
 @font-face {
   font-family: PixelTimes;
   font-style: normal;
@@ -17629,13 +17634,13 @@ select.form-control {
 
 @keyframes neonGlow {
   0% {
-      background-position: 0 50%;
+    background-position: 0 50%;
   }
   50% {
-      background-position: 100% 50%;
+    background-position: 100% 50%;
   }
   100% {
-      background-position: 0 50%;
+    background-position: 0 50%;
   }
 }
 
@@ -17663,7 +17668,12 @@ select.form-control {
 }
 
 .text-glow {
-  background-image: linear-gradient(90deg, var(--fore-color-1), var(--fore-color-3), var(--fore-color-4));
+  background-image: linear-gradient(
+    90deg,
+    var(--fore-color-1),
+    var(--fore-color-3),
+    var(--fore-color-4)
+  );
   background-size: 400% 2%;
   color: transparent;
   -webkit-background-clip: text;

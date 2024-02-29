@@ -75,7 +75,7 @@
                     </details>
                     {% else %}
                     <details @toggle="showHint(event)">
-                      <summary>Unlock Hint for {{ hint.cost }} point{{ hint.cost|pluralize }}</summary>
+                      <summary>Разблокировать Подсказку за {{ hint.cost }} очков</summary>
                       <div x-html="html"></div>
                     </details>
                     {% endif %}
